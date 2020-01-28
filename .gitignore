@@ -1,0 +1,5 @@
+/vendor/
+/tmp/
+/htdocs/
+/packages/mautic/
+.idea/

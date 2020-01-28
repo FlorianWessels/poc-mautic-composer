@@ -1,0 +1,28 @@
+{
+  "name": "mautic/mautic-composer-installer",
+  "type": "composer-plugin",
+  "description": "Mautic Installer",
+  "homepage": "https://www.mautic.org",
+  "license": "GPL-3.0-or-later",
+  "authors": [{
+    "name": "Mautic Core Team",
+    "email": "mautic@mautic.org",
+    "role": "Developer"
+  }],
+  "support": {
+    "general": "https://www.mautic.org",
+    "issues": "https://link-to.github.com"
+  },
+  "autoload": {
+    "psr-4": {
+    "Mautic\\Mautic\\Composer\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.0",
+    "composer-plugin-api": "^1.0"
+  },
+  "extra": {
+    "class": "Mautic\\Mautic\\Composer\\Installer\\Plugin"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "mautic/mautic-config",
+  "type": "mautic-framework",
+  "description": "Mautic Open Source Distribution",
+  "homepage": "https://www.mautic.org",
+  "license": "GPL-3.0-or-later",
+  "authors" : [{
+    "name": "Mautic Core Team",
+    "email": "mautic@mautic.org",
+    "role": "Developer"
+  }],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "mautic/mautic-core": "@dev"
+  },
+  "require-dev": {
+  },
+  "suggest": {
+  },
+  "conflict": {
+  },
+  "provide": {
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.x"
+    },
+    "mautic/mautic": {
+      "bundle-key": "config"
+    }
+  },
+  "autoload": {
+    "Mautic\\Mautic\\Config\\": "Classes/"
+  },
+  "autoload-dev": {
+    "Mautic\\Mautic\\Config\\Tests": "Tests/"
+  }
+}

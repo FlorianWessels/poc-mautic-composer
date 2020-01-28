@@ -1,0 +1,61 @@
+{
+  "name": "bitmotion/monitor-site",
+  "description": "Bitmotion TYPO3 Monitor",
+  "license": "GPL-2.0-or-later",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Florian Wessels",
+      "email": "f.wessels@bitmotion.de"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.2.24"
+    },
+    "optimize-autoloader": true,
+    "discard-changes": true,
+    "sort-packages": true
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "packages/*"
+    },
+    {
+      "type": "composer",
+      "url": "https://satis.bitmotion.de"
+    }
+  ],
+  "require": {
+    "bitmotion/mautic-auth0-bundle": "dev-master",
+    "mautic/mautic-api": "@dev",
+    "mautic/mautic-category": "@dev",
+    "mautic/mautic-composer-installer": "@dev",
+    "mautic/mautic-config": "@dev",
+    "mautic/mautic-core": "@dev",
+    "mautic/mautic-dashboard": "@dev",
+    "mautic/mautic-email": "@dev",
+    "mautic/mautic-form": "@dev",
+    "mautic/mautic-install": "@dev",
+    "mautic/mautic-lead": "@dev",
+    "mautic/mautic-page": "@dev",
+    "mautic/mautic-plugin": "@dev",
+    "mautic/mautic-stage": "@dev",
+    "mautic/mautic-user": "@dev",
+    "mautic/mautic-theme-mauve": "@dev"
+  },
+  "require-dev": {
+    "codeception/codeception": "^4.0.0",
+    "http-interop/http-factory-guzzle": "^1.0",
+    "liip/functional-test-bundle": "^3.3.0",
+    "liip/test-fixtures-bundle": "^1.6",
+    "mautic/transifex": "^4.0",
+    "ricardofiorani/guzzle-psr18-adapter": "^1.0"
+  },
+  "extra": {
+    "mautic/mautic": {
+      "root-dir": "htdocs"
+    }
+  }
+}
